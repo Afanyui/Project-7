@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Ledgerly — Dashboard
+    </title>
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-icon">
+          L
+        </span>
+        ledgerly
+      </a>
+      <nav>
+        <a class="active" href="dashboard.html">
+          Dashboard
+        </a>
+        <a href="transactions.html">
+          Transactions
+        </a>
+        <a href="reports.html">
+          Reports
+        </a>
+        <a href="settings.html">
+          Settings
+        </a>
+      </nav>
+      <a class="avatar" href="settings.html" aria-label="Settings">
+        JD
+      </a>
+    </header>
+    <main class="container">
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">
+            SUNDAY, NOVEMBER 8, 2026
+          </p>
+          <h1>
+            Your money,
+            <span>
+              in focus.
+            </span>
+          </h1>
+          <p class="muted">
+            A clear view of your finances starts here.
+          </p>
+        </div>
+        <a class="button primary" href="add-transaction.html">
+          ＋ Add transaction
+        </a>
+      </section>
+      <section class="summary-grid">
+        <article class="summary-card balance">
+          <span class="card-label">
+            TOTAL BALANCE
+          </span>
+          <strong>
+            3,420,500 FCFA
+          </strong>
+          <span class="trend positive">
+            ↗ 8.2%
+            <small>
+              this month
+            </small>
+          </span>
+          <div class="sparkline" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </div>
+        </article>
+        <article class="summary-card">
+          <span class="card-label">
+            INCOME THIS MONTH
+          </span>
+          <strong>
+            1,850,000 FCFA
+          </strong>
+          <span class="trend positive">
+            ↗ 4.8%
+            <small>
+              vs last month
+            </small>
+          </span>
+          <span class="metric-icon green">
+            ↙
+          </span>
+        </article>
+        <article class="summary-card">
+          <span class="card-label">
+            SPENDING THIS MONTH
+          </span>
+          <strong>
+            1,230,400 FCFA
+          </strong>
+          <span class="trend negative">
+            ↗ 2.1%
+            <small>
+              vs last month
+            </small>
+          </span>
+          <span class="metric-icon orange">
+            ↗
+          </span>
+        </article>
+      </section>
+      <section class="dashboard-grid">
+        <article class="panel spending">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">
+                YOUR CASH FLOW
+              </p>
+              <h2>
+                Income & spending · FCFA
+              </h2>
+            </div>
+            <span class="select-look">
+              This month⌄
+            </span>
+          </div>
+          <div class="chart-legend">
+            <span>
+              <i class="legend-income">
+              </i>
+              Income
+            </span>
+            <span>
+              <i class="legend-spend">
+              </i>
+              Spending
+            </span>
+          </div>
+          <div class="chart" role="img" aria-label="Illustrative monthly income and spending chart">
+            <div class="y-labels">
+              <span>
+                2M
+              </span>
+              <span>
+                1.5M
+              </span>
+              <span>
+                1M
+              </span>
+              <span>
+                500k
+              </span>
+              <span>
+                250k
+              </span>
+              <span>
+                0
+              </span>
+            </div>
+            <div class="chart-plot">
+              <div class="gridline">
+              </div>
+              <div class="gridline">
+              </div>
+              <div class="gridline">
+              </div>
+              <div class="gridline">
+              </div>
+              <div class="gridline">
+              </div>
+              <div class="bars">
+                <div class="bar-pair">
+                  <i style="--h:49%">
+                  </i>
+                  <b style="--h:31%">
+                  </b>
+                  <small>
+                    Jun
+                  </small>
+                </div>
+                <div class="bar-pair">
+                  <i style="--h:58%">
+                  </i>
+                  <b style="--h:42%">
+                  </b>
+                  <small>
+                    Jul
+                  </small>
+                </div>
+                <div class="bar-pair">
+                  <i style="--h:43%">
+                  </i>
+                  <b style="--h:34%">
+                  </b>
+                  <small>
+                    Aug
+                  </small>
+                </div>
+                <div class="bar-pair">
+                  <i style="--h:66%">
+                  </i>
+                  <b style="--h:44%">
+                  </b>
+                  <small>
+                    Sep
+                  </small>
+                </div>
+                <div class="bar-pair">
+                  <i style="--h:58%">
+                  </i>
+                  <b style="--h:39%">
+                  </b>
+                  <small>
+                    Oct
+                  </small>
+                </div>
+                <div class="bar-pair">
+                  <i style="--h:82%">
+                  </i>
+                  <b style="--h:55%">
+                  </b>
+                  <small>
+                    Nov
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="panel categories">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">
+                WHERE IT GOES
+              </p>
+              <h2>
+                Top categories
+              </h2>
+            </div>
+            <a class="text-link" href="reports.html">
+              See report →
+            </a>
+          </div>
+          <div class="category-row">
+            <div class="category-name">
+              <span class="cat-icon food">
+                ⌂
+              </span>
+              <span>
+                Housing
+              </span>
+              <b>
+                520,000 FCFA
+              </b>
+            </div>
+            <div class="progress">
+              <i style="width:78%">
+              </i>
+            </div>
+          </div>
+          <div class="category-row">
+            <div class="category-name">
+              <span class="cat-icon food">
+                ♧
+              </span>
+              <span>
+                Food & dining
+              </span>
+              <b>
+                280,000 FCFA
+              </b>
+            </div>
+            <div class="progress">
+              <i style="width:48%">
+              </i>
+            </div>
+          </div>
+          <div class="category-row">
+            <div class="category-name">
+              <span class="cat-icon travel">
+                ↗
+              </span>
+              <span>
+                Transport
+              </span>
+              <b>
+                165,000 FCFA
+              </b>
+            </div>
+            <div class="progress">
+              <i style="width:31%">
+              </i>
+            </div>
+          </div>
+          <div class="category-row">
+            <div class="category-name">
+              <span class="cat-icon fun">
+                ✳
+              </span>
+              <span>
+                Shopping
+              </span>
+              <b>
+                106,000 FCFA
+              </b>
+            </div>
+            <div class="progress">
+              <i style="width:20%">
+              </i>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="panel transactions-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">
+              THE LATEST
+            </p>
+            <h2>
+              Recent transactions
+            </h2>
+          </div>
+          <a class="text-link" href="transactions.html">
+            All transactions →
+          </a>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  TRANSACTION
+                </th>
+                <th>
+                  CATEGORY
+                </th>
+                <th>
+                  DATE
+                </th>
+                <th>
+                  AMOUNT
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="merchant-icon">
+                    ▦
+                  </span>
+                  <span class="merchant">
+                    Monthly salary
+                    <small>
+                      Deposit
+                    </small>
+                  </span>
+                </td>
+                <td>
+                  <span class="tag income-tag">
+                    Income
+                  </span>
+                </td>
+                <td>
+                  Nov 07, 2026
+                </td>
+                <td class="amount plus">
+                  +1,650,000 FCFA
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="merchant-icon coral">
+                    ⌂
+                  </span>
+                  <span class="merchant">
+                    November rent
+                    <small>
+                      Home
+                    </small>
+                  </span>
+                </td>
+                <td>
+                  <span class="tag">
+                    Housing
+                  </span>
+                </td>
+                <td>
+                  Nov 05, 2026
+                </td>
+                <td class="amount">
+                  −520,000 FCFA
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="merchant-icon amber">
+                    ♧
+                  </span>
+                  <span class="merchant">
+                    Fresh Market
+                    <small>
+                      Groceries
+                    </small>
+                  </span>
+                </td>
+                <td>
+                  <span class="tag">
+                    Food
+                  </span>
+                </td>
+                <td>
+                  Nov 04, 2026
+                </td>
+                <td class="amount">
+                  −37,500 FCFA
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <p class="static-note">
+        Demo figures for layout preview. This HTML/CSS starter does not store entered data.
+      </p>
+    </main>
+    <footer>
+      Made for a calmer relationship with money
+      <span>
+        Ledgerly · Personal finance
+      </span>
+    </footer>
+  </body>
+</html>
