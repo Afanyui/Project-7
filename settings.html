@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Ledgerly — Settings
+    </title>
+    <link rel="stylesheet" href="settings.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-icon">
+          L
+        </span>
+        ledgerly
+      </a>
+      <nav>
+        <a href="dashboard.html">
+          Dashboard
+        </a>
+        <a href="transactions.html">
+          Transactions
+        </a>
+        <a href="reports.html">
+          Reports
+        </a>
+        <a class="active" href="settings.html">
+          Settings
+        </a>
+      </nav>
+      <a class="avatar" href="settings.html">
+        JD
+      </a>
+    </header>
+    <main class="container narrow">
+      <section class="page-title">
+        <div>
+          <p class="eyebrow">
+            MAKE IT YOURS
+          </p>
+          <h1>
+            Settings
+          </h1>
+          <p class="muted">
+            Set up the basics for your tracker.
+          </p>
+        </div>
+      </section>
+      <form class="panel settings-form" action="#" method="get">
+        <div class="settings-section">
+          <span class="settings-icon">
+            ◉
+          </span>
+          <div class="settings-content">
+            <h2>
+              Profile
+            </h2>
+            <p>
+              How should we address you?
+            </p>
+            <label class="field">
+              <span>
+                DISPLAY NAME
+              </span>
+              <input type="text" name="display-name" value="Jordan Davis">
+            </label>
+            <label class="field">
+              <span>
+                EMAIL
+              </span>
+              <input type="email" name="email" placeholder="you@example.com">
+            </label>
+          </div>
+        </div>
+        <div class="settings-section">
+          <span class="settings-icon green">
+            ＄
+          </span>
+          <div class="settings-content">
+            <h2>
+              Preferences
+            </h2>
+            <p>
+              Choose how amounts appear.
+            </p>
+            <div class="field-pair">
+              <label class="field">
+                <span>
+                  CURRENCY
+                </span>
+                <select name="currency">
+                  <option selected>
+                    XAF — Central African CFA franc (FCFA)
+                  </option>
+                </select>
+              </label>
+              <label class="field">
+                <span>
+                  MONTH STARTS ON
+                </span>
+                <select name="month-start">
+                  <option>
+                    1st of the month
+                  </option>
+                  <option>
+                    Monday
+                  </option>
+                </select>
+              </label>
+            </div>
+            <label class="field">
+              <span>
+                STARTING BALANCE
+              </span>
+              <div class="amount-input">
+                <b>
+                  FCFA
+                </b>
+                <input type="number" name="balance" min="0" step="0.01" placeholder="0.00">
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="settings-section">
+          <span class="settings-icon purple">
+            ⌑
+          </span>
+          <div class="settings-content">
+            <h2>
+              Categories
+            </h2>
+            <p>
+              Common spending categories in this starter.
+            </p>
+            <div class="chips">
+              <span>
+                Housing
+              </span>
+              <span>
+                Food & dining
+              </span>
+              <span>
+                Transport
+              </span>
+              <span>
+                Shopping
+              </span>
+              <span>
+                Health
+              </span>
+              <span>
+                Other
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="settings-submit">
+          <span class="form-hint">
+            Settings are a visual preview and won’t persist in this static version.
+          </span>
+          <button class="button primary" type="submit">
+            Save preferences
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      Made for a calmer relationship with money
+      <span>
+        Ledgerly · Personal finance
+      </span>
+    </footer>
+  </body>
+</html>
