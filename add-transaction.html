@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Ledgerly — Add transaction
+    </title>
+    <link rel="stylesheet" href="add-transaction.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="dashboard.html">
+        <span class="brand-icon">
+          L
+        </span>
+        ledgerly
+      </a>
+      <nav>
+        <a href="dashboard.html">
+          Dashboard
+        </a>
+        <a class="active" href="transactions.html">
+          Transactions
+        </a>
+        <a href="reports.html">
+          Reports
+        </a>
+        <a href="settings.html">
+          Settings
+        </a>
+      </nav>
+      <a class="avatar" href="settings.html">
+        JD
+      </a>
+    </header>
+    <main class="container narrow">
+      <a class="back-link" href="transactions.html">
+        ← Back to transactions
+      </a>
+      <section class="page-title form-title">
+        <div>
+          <p class="eyebrow">
+            RECORD YOUR MONEY
+          </p>
+          <h1>
+            Add transaction
+          </h1>
+          <p class="muted">
+            Capture the details while they’re fresh.
+          </p>
+        </div>
+      </section>
+      <form class="panel transaction-form" action="#" method="get">
+        <fieldset class="type-switch">
+          <legend>
+            TRANSACTION TYPE
+          </legend>
+          <label class="type-choice selected">
+            <input type="radio" name="type" value="expense" checked>
+            <span>
+              ↗
+            </span>
+            Expense
+          </label>
+          <label class="type-choice">
+            <input type="radio" name="type" value="income">
+            <span>
+              ↙
+            </span>
+            Income
+          </label>
+        </fieldset>
+        <label class="field">
+          <span>
+            DESCRIPTION
+          </span>
+          <input type="text" name="description" placeholder="e.g. Weekly groceries" required>
+        </label>
+        <div class="field-pair">
+          <label class="field">
+            <span>
+              AMOUNT
+            </span>
+            <div class="amount-input">
+              <b>
+                FCFA
+              </b>
+              <input type="number" name="amount" min="0" step="0.01" placeholder="0.00" required>
+            </div>
+          </label>
+          <label class="field">
+            <span>
+              DATE
+            </span>
+            <input type="date" name="date" required>
+          </label>
+        </div>
+        <label class="field">
+          <span>
+            CATEGORY
+          </span>
+          <select name="category">
+            <option>
+              Choose a category
+            </option>
+            <option>
+              Housing
+            </option>
+            <option>
+              Food & dining
+            </option>
+            <option>
+              Transport
+            </option>
+            <option>
+              Shopping
+            </option>
+            <option>
+              Health
+            </option>
+            <option>
+              Salary
+            </option>
+            <option>
+              Other
+            </option>
+          </select>
+        </label>
+        <label class="field">
+          <span>
+            NOTE
+            <small>
+              OPTIONAL
+            </small>
+          </span>
+          <textarea name="note" rows="3" placeholder="Add a note to remember the details">
+          </textarea>
+        </label>
+        <p class="form-hint">
+          This static page lets you fill in the fields, but it won’t save the transaction yet.
+        </p>
+        <div class="form-actions">
+          <a class="button" href="transactions.html">
+            Cancel
+          </a>
+          <button class="button primary" type="submit">
+            Save transaction
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      Made for a calmer relationship with money
+      <span>
+        Ledgerly · Personal finance
+      </span>
+    </footer>
+  </body>
+</html>
